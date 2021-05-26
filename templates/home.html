@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container" align="center">
+
+        <form class="well form-horizontal" action="/registration" method="post" id="contact_form">
+            <fieldset>
+
+                <legend>
+                    <center>
+                        <h2 class="registration_title"><b>Registration Form</b></h2>
+                    </center>
+                </legend><br>
+
+                <div class="form-group">
+                    <div class="col-md-4 inputGroupContainer">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="file" id="myfile" name="myfile">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit
+                    <span class="glyphicon glyphicon-send"></span>
+                </button>
+
+
+                <button type="reset" class="btn btn-primary">Reset
+                    <span class="glyphicon glyphicon-send"></span>
+                </button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
