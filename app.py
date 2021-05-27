@@ -90,7 +90,7 @@ def registration():
                         # clicking submit button
                         button = driver.find_element_by_xpath("/html/body/div/form/fieldset/div[9]/div/button")
                         button.click()
-        return render_template("templates/success.html")
+        return render_template("https://github.com/samudsan/web-automation/blob/master/templates/success.html")
 
 
 if __name__ == '__main__':
