@@ -20,7 +20,7 @@ def registration():
     if request.method == 'POST':
         
         # defining url paths
-        driver_path = "https://github.com/samudsan/web-automation/blob/37f391013d776bf79d68d6c9b52d4b66ccde2b1f/data/chromedriver"
+        driver_path = "data/chromedriver"
         url_path = "https://raw.githubusercontent.com/samudsan/web-automation/37f391013d776bf79d68d6c9b52d4b66ccde2b1f/templates/registration.html"
 
 
