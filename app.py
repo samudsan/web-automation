@@ -20,8 +20,8 @@ def registration():
     if request.method == 'POST':
         
         # defining url paths
-        driver_path = "/home/sandeep/Desktop/herokuEnv/chromedriver"
-        url_path = "file:///home/sandeep/Desktop/herokuEnv/templates/registration.html"
+        driver_path = "https://github.com/samudsan/web-automation/blob/37f391013d776bf79d68d6c9b52d4b66ccde2b1f/data/chromedriver"
+        url_path = "https://raw.githubusercontent.com/samudsan/web-automation/37f391013d776bf79d68d6c9b52d4b66ccde2b1f/templates/registration.html"
 
 
         # initializing webdriver and calling url
@@ -29,7 +29,7 @@ def registration():
         driver.get(url_path)
 
         # fetching data from file        
-        with open ("data.csv") as csv_file:
+        with open ("https://raw.githubusercontent.com/samudsan/web-automation/37f391013d776bf79d68d6c9b52d4b66ccde2b1f/data/data.csv") as csv_file:
                 csv_reader = csv.reader(csv_file)
                 next(csv_reader)  
                 for row in csv_reader:
