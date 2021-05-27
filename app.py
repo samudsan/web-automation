@@ -21,11 +21,12 @@ def registration():
         
         # defining url paths
         driver_path = "data/chromedriver"
+        log_path = "data"
         url_path = "https://raw.githubusercontent.com/samudsan/web-automation/37f391013d776bf79d68d6c9b52d4b66ccde2b1f/templates/registration.html"
 
 
         # initializing webdriver and calling url
-        driver = webdriver.Chrome(driver_path)
+        driver = webdriver.Chrome(executable_path=driver_path, service_log_path=log_path)
         driver.get(url_path)
 
         # fetching data from file        
